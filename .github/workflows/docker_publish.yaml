@@ -1,7 +1,7 @@
 # @Author: jankincai
 # @Date:   2025-06-12 17:22:40
 # @Last Modified by:   jankincai
-# @Last Modified time: 2025-06-13 10:12:17
+# @Last Modified time: 2025-06-13 10:15:44
 name: Docker
 
 # This workflow uses actions that are not certified by GitHub.
@@ -65,7 +65,7 @@ jobs:
         with:
           registry: ${{ env.REGISTRY }}
           username: ${{ secrets.DOCKER_HUB_USERNAME }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+          password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
 
       # Extract metadata (tags, labels) for Docker
       # https://github.com/docker/metadata-action
