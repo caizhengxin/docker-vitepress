@@ -1,7 +1,7 @@
 # @Author: jankincai
 # @Date:   2025-06-12 17:22:40
 # @Last Modified by:   jankincai
-# @Last Modified time: 2025-06-13 10:22:38
+# @Last Modified time: 2025-06-13 17:42:41
 name: Docker
 
 # This workflow uses actions that are not certified by GitHub.
@@ -16,8 +16,8 @@ on:
     branches: [ "master" ]
     # Publish semver tags as releases.
     tags: [ 'v*.*.*' ]
-  pull_request:
-    branches: [ "master" ]
+  # pull_request:
+  #   branches: [ "master" ]
 
 env:
   # Use docker.io for Docker Hub if empty

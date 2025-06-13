@@ -11,7 +11,7 @@ $ cd docker-vitepress
 $ docker buildx build -t vitepress:2.0.0-alpha.5 .
 
 # "path" replaces the actual path
-$ sudo dockerun --rm --name vitepress -v /path/vitepress-demo/:/app/ -p 5173:5173 -it vitepress:2.0.0-alpha.5
+$ sudo docker run --rm --name vitepress -v /path/vitepress-demo/:/app/ -p 5173:5173 -it vitepress:2.0.0-alpha.5
 ```
 
 ```
